@@ -1,0 +1,63 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.similar-artist:hover {
+  cursor: pointer;
+}
+
+.read-more {
+  color: black;
+}
+
+.read-more:hover {
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+.similar-artist {
+  margin-top:4px;
+}
+
+.similar-artist{
+  text-align:center;
+  font-size: 10px;
+}
+
+.artist-image {
+  border-radius: 5px;
+}
+
+.similar-artists {
+  list-style-type: none;
+}
+.artist-contemp {
+  display: inline-block;
+  margin-left:10px;
+  maragin-right:10px;
+}
+
+.sub-title {
+  text-align: center;
+}
+
+.artist-image-sub {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.tour {
+  margin-top: 20px;
+}
+
+
+}

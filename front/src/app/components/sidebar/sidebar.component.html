@@ -1,0 +1,15 @@
+<ul class="sidebar col-md-4">
+  <li class="sidebar-item"><input type="text" list="suggestions" class="sb-input" (keyup)="typeahead(artistSearch.value)" placeholder="Search for an Artist" #artistSearch/>
+    <button class="search-button" (click) = "searchArtist(artistSearch);"><i class="fas fa-search"></i></button></li>
+  <a routerLink="/news"><li class="sidebar-item sb-color">News</li></a>
+  <a routerLink="/charts"><li class="sidebar-item sb-color">Charts</li></a>
+</ul>
+
+
+<span *ngIf="suggestions?.length > 0">
+  <datalist id="suggestions">
+    <div *ngFor="let item of suggestions">
+      <option value="{{item.name}}">
+    </div>
+  </datalist>
+</span>

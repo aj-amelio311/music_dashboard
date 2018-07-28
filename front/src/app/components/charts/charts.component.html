@@ -1,0 +1,11 @@
+<div class="charts">
+    <h1 class="title">Charts</h1>
+<table class="table chart-table">
+  <tr class="head-row"><td></td><td>Artist</td><td>Listeners</td>
+  <tr *ngFor="let data of charts">
+    <td><img class="thumbnail" src="{{data.image}}" /></td>
+    <td><span class="artist" (click) = "goToArtist(artistSearch)" #artistSearch>{{data.artist}}</span></td>
+    <td>{{data.listeners | number:'2.'}}</td>
+  </tr>
+</table>
+</div>

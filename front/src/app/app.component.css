@@ -1,0 +1,15 @@
+.main-body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+
+}
+
+.logo-text {
+  color: limegreen;
+  text-align: center;
+}

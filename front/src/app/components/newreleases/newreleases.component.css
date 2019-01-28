@@ -1,0 +1,37 @@
+.new-img {
+  width: 140px;
+  height: 140px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a5c956+28,32cd32+94 */
+  background: #a5c956; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #a5c956 28%, #32cd32 94%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #a5c956 28%,#32cd32 94%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #a5c956 28%,#32cd32 94%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c956', endColorstr='#32cd32',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+.new-release {
+  text-align: center;
+  word-break: break-word;
+}
+
+.fa-music {
+  color: black;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 45px;
+}
+
+a {
+  text-decoration: none;
+}

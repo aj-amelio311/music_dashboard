@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,131313+100 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#353535+0,131313+100 */
+  background: #353535; /* Old browsers */
+  background: -moz-linear-gradient(top, #353535 0%, #131313 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #353535 0%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #353535 0%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#131313',GradientType=0 ); /* IE6-9 */  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+html {
+    height: 100%;
+}
+
+
+.page-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.fa-home {
+  color: limegreen;
+}
+
+.fa-home:hover {
+  color: #76fc76
+}
+
+.loader{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+a, a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a, h1, h2, h3, h4, h5, h6, li {
+  font-family: 'Roboto', sans-serif;
+}
+
+.cover:hover, .new-img:hover {
+  box-shadow: 0 0 8px;
+}
+
+.artistLink {
+  cursor: pointer;
+}

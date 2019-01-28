@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+  padding: 0
+}
+
+li {
+  display: inline-block;
+}
+
+.review {
+  text-align: center;
+}
+
+.artist:hover {
+  cursor: pointer;
+}

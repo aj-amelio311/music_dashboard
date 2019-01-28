@@ -1,0 +1,45 @@
+ul {
+  list-style-type: none;
+  padding: 0
+}
+
+table {
+  padding: 0;
+}
+
+.thumbnail {
+  width: 40px;
+  height: auto;
+}
+
+.chart-preview {
+  margin-top: 10px;
+  width: 60px;
+}
+
+.chart-table {
+  background-color: #B6F8B6;
+  color: black;
+}
+
+.chart-table th {
+  background-color: limegreen !important;
+  color: black;
+}
+
+.table td, .table th {
+    vertical-align: top;
+    border-top: 1px solid #2c3e51;
+}
+
+.artist:hover {
+  cursor: pointer;
+}
+
+.full-row td:hover {
+  cursor: pointer;
+}
+
+.head-row {
+background-color: #4dce4d !important;
+}

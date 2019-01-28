@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.similar-thumb {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  display: block;
+}
+
+.artist-img {
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.artist-name {
+  text-align: center;
+  word-break: break-word;
+}
+
+.tour {
+  text-align: center;
+}
+
+h4, h6 {
+  text-align: center;
+}
+
+.notFound {
+  text-align: center;
+}
+
+.read-more {
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-link {
+  margin-top: 10px;
+}
+
+.news-link-full {
+  margin-top: 10px;
+  text-align: center;
+}

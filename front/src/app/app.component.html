@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="home">
+  <a routerLink="/"> <i class="fa fa-home fa-2x" aria-hidden="true"> </i>
+</a>
+</div>
+<div style="text-align:center" @slide @fade>
+  <img src="../assets/logo.png" class="logo" />
+  <h3 class="logo-text">Music Dashboard</h3>
+</div>
+<div class="container">
+  <app-searchbar></app-searchbar>
+  <div class="col-md-12 main-body">
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+  </div>
+</div>

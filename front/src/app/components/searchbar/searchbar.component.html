@@ -1,0 +1,25 @@
+<div class="row" @fade @slide>
+  <div class="col-md-12">
+    <form (ngSubmit)="artistSearch(form);" #form="ngForm">
+      <input
+        type="text"
+        class="searchbar form-control"
+        placeholder="Search for an artist"
+        ngModel
+        name="artistName"
+        list="suggestions"
+        (keyup)=typeahead($event)
+      />
+      <button type="submit" class="btn btn-success"><i class="fa fa-search" aria-hidden="true"> </i></button>
+    </form>
+  </div>
+</div>
+
+
+<span *ngIf="suggestions?.length > 0">
+  <datalist id="suggestions">
+    <div *ngFor="let item of suggestions">
+      <option value="{{item.name}}">
+    </div>
+  </datalist>
+</span>

@@ -1,0 +1,47 @@
+<span *ngIf="loading else loaded">
+  <div class="row">
+     <div class="col-md-12">
+       <img src="../../../assets/loading.gif" class="loader"/>
+     </div>
+   </div>
+</span>
+<ng-template #loaded>
+  <span *ngIf="status == 200 else notFound">
+    <div class="container" @slide @fade>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="{{img}}" class="artist-img" />
+          <h1 class="artist-name">{{ artist }}</h1>
+          <h4 class="tour">Currently Touring: {{isTouring}}</h4>
+          <h4 class="tour">Listeners: {{listeners | number:'2.'}}</h4>
+        </div>
+        <div class="col-md-6">
+          <p>{{ (bio.length>600)? (bio | slice:0:600)+'...':(bio) }}</p>
+          <p class="read-more" (click)="goToPage($event);" attr.url="{{url}}">Read More</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Similar Artists</h4>
+          <span *ngIf="similarArtists.length > 0 else noArtists">
+              <div *ngFor="let artist of similarArtists">
+                <img src="{{artist.image[2]['#text']}}" class="similar-thumb" />
+                <h6 attr.fullname="{{artist.name}}" class="artistLink" (click)="goToArtist($event)">{{artist.name}}</h6>
+              </div>
+          </span>
+          <ng-template #noArtists>
+            <h6>None Available</h6>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </span>
+  <ng-template #notFound>
+    <div class="container" @slide @fade>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="notFound">No Artist Found</h1>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+</ng-template>

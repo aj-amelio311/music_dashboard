@@ -1,0 +1,40 @@
+<div class="row">
+   <div class="col-md-12">
+      <h6 class="page-title">Last.fm Charts</h6>
+   </div>
+</div>
+<div class="row">
+   <div class="col-md-12">
+     <ul>
+       <span *ngIf="onHomePage else full">
+         <table class="table chart-table table-striped">
+           <tr class="head-row"><td></td><td>Artist</td><td>Listeners</td>
+           <tr *ngFor="let data of charts | slice:0:4">
+             <td><img class="thumbnail" src="{{data.image}}" /></td>
+             <td><h6 class="artist" (click) = "goToArtist($event)" attr.fullname="{{data.artist}}">{{data.artist}}</h6></td>
+             <td>{{data.listeners | number:'2.'}}</td>
+           </tr>
+         </table>
+       </span>
+       <ng-template #full>
+         <span *ngIf="loading else loaded">
+           <div class="row">
+              <div class="col-md-12">
+                <img src="../../../assets/loading.gif" class="loader"/>
+              </div>
+            </div>
+         </span>
+         <ng-template #loaded>
+           <table class="table chart-table table-striped">
+             <tr class="head-row full-row"><td></td><td (click)="sortByArtist();">Artist</td><td (click)="sortByNumber();">Listeners</td>
+             <tr *ngFor="let data of charts">
+               <td><img class="thumbnail" src="{{data.image}}" /></td>
+               <td><h6 class="artist" (click) = "goToArtist($event)" attr.fullname="{{data.artist}}">{{data.artist}}</h6></td>
+               <td>{{data.listeners | number:'2.'}}</td>
+             </tr>
+           </table>
+         </ng-template>
+       </ng-template>
+     </ul>
+   </div>
+</div>

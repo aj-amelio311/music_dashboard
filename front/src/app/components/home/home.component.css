@@ -1,0 +1,25 @@
+.more {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  background-color: limegreen;
+  color: black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 120px;
+  text-align: center;
+}
+
+.more:hover {
+  background-color: #76fc76;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  margin-top: 40px;
+}
